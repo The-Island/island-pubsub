@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "author": "The Island (git://github.com/The-Island)",
+  "name": "island-pubsub",
+  "version": "0.0.1",
+  "port": 1338,
+  "pubSocketPort": "tcp://127.0.0.1:5555",
+  "subSocketPort": "tcp://127.0.0.1:5556",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/The-Island/island-pubsub.git"
+  },
+  "dependencies": {
+    "island-worker": "git+https://island-ebs:i51andghebs@github.com/The-Island/island-worker.git#develop",
+    "island-util": "git+https://island-ebs:i51andghebs@github.com/The-Island/island-util.git#develop",
+    "underscore": "^1.4.4",
+    "underscore.string": "~2.3.1",
+    "step": "0.0.5",
+    "request": "^2.40.0"
+  },
+  "engines": {
+    "node": "~0.10.26"
+  },
+  "scripts": {
+    "start": "./start.js"
+  }
+}
