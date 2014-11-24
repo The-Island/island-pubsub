@@ -12,7 +12,7 @@ Island PubSub runs in production on [AWS Elastic Beanstalk](http://aws.amazon.co
 ```
 .aws
 	aws_credential_file
-	islandio.pem
+	island.pem
 .elasticbeanstalk
 	config
 	optionsettings.worker
@@ -26,7 +26,7 @@ AWSSecretKey=<YOUR_IAM_SECRET_KEY>
 AWSRegion=us-east-1
 ```
 
-```.aws/islandio.pem``` : (_Used to ```tail``` logs... get this from Sander or Eyal_)
+```.aws/island.pem``` : (_Used to ```tail``` logs... get this from Sander or Eyal_)
 
 ```.elasticbeanstalk/config``` : (_\<PATH\> must be absolute_)
 
@@ -41,7 +41,7 @@ OptionSettingFile=<PATH>/.elasticbeanstalk/optionsettings.worker
 RdsEnabled=No
 Region=us-east-1
 ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
-SolutionStack=64bit Amazon Linux 2014.03 v1.0.4 running Node.js
+SolutionStack=64bit Amazon Linux 2014.09 v1.0.9 running Node.js
 ```
 
 ```.elasticbeanstalk/optionsettings.worker``` :
@@ -52,8 +52,8 @@ MinSize=1
 MaxSize=1
 
 [aws:autoscaling:launchconfiguration]
-EC2KeyName=islandio
-InstanceType=t2.small
+EC2KeyName=island
+InstanceType=t2.micro
 IamInstanceProfile=aws-elasticbeanstalk-ec2-role
 
 [aws:elasticbeanstalk:application:environment]
@@ -67,7 +67,7 @@ SUB_SOCKET_PORT=<SUB_SOCKET_PORT>
 [aws:elasticbeanstalk:container:nodejs]
 GzipCompression=false
 NodeCommand=node start.js
-NodeVersion=0.10.26
+NodeVersion=0.10.31
 ProxyServer=none
 
 [aws:elasticbeanstalk:hostmanager]

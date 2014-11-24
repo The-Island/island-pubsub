@@ -19,7 +19,7 @@
     "request": "^2.40.0"
   },
   "engines": {
-    "node": "~0.10.26"
+    "node": "~0.10.31"
   },
   "scripts": {
     "start": "./start.js"
