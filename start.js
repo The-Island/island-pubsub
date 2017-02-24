@@ -1,11 +1,7 @@
 #!/usr/bin/env node
 
 var worker = require('island-worker');
-var request = require('request');
 var util = require('util');
-var Step = require('step');
-var _ = require('underscore');
-_.mixin(require('underscore.string'));
 var pack = require('./package.json');
 
 // Start a worker.
