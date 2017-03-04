@@ -11,7 +11,7 @@
     "url": "git://github.com/The-Island/island-pubsub.git"
   },
   "dependencies": {
-    "island-worker": "git+https://github.com/The-Island/island-worker.git#update"
+    "island-worker": "git+https://github.com/The-Island/island-worker.git#0.0.2"
   },
   "scripts": {
     "start": "./start.js"
