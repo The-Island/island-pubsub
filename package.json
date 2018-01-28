@@ -1,7 +1,7 @@
 {
   "private": true,
   "author": "The Island (git://github.com/The-Island)",
-  "name": "island-pubsub",
+  "name": "@islandio/pubsub",
   "version": "0.0.2",
   "port": 1338,
   "pubSocketPort": "tcp://127.0.0.1:5555",
@@ -11,7 +11,7 @@
     "url": "git://github.com/The-Island/island-pubsub.git"
   },
   "dependencies": {
-    "island-worker": "git+https://github.com/The-Island/island-worker.git#0.0.2"
+    "@islandio/worker": "^0.0.3"
   },
   "scripts": {
     "start": "./start.js"
