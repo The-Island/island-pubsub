@@ -2,7 +2,7 @@
   "private": true,
   "author": "The Island (git://github.com/The-Island)",
   "name": "@islandio/pubsub",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "port": 1338,
   "pubSocketPort": "tcp://127.0.0.1:5555",
   "subSocketPort": "tcp://127.0.0.1:5556",
