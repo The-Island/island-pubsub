@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var worker = require('island-worker');
+var worker = require('@islandio/worker');
 var util = require('util');
 var pack = require('./package.json');
 
